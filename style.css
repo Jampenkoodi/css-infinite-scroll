@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    height: 100dvh;
+    border: 3px solid blue;
+    background-color: blue;
+}
+
+.wrapper {
+    border: 1px solid blue;
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+}
+
+@keyframes scrollleft {
+    to {
+        left: -200px;
+    }
+}
+
+.item {
+    width: 400px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 6px;
+    position: absolute;
+    left: calc(200px * 8);
+    animation-name: scrollleft; 
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -1s;
+    color: white;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.item1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1 );
+}
