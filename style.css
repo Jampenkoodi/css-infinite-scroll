@@ -9,18 +9,18 @@
 }
 
 body {
-    height: 100dvh;
+    height: 100%;
     border: 3px solid blue;
     background-color: blue;
 }
 
 .wrapper {
     border: 1px solid blue;
-    width: 90%;
+    width: 100%;
     max-width: 1536px;
     margin-inline: auto;
     position: relative;
-    height: 100px;
+    height: 600px;
     margin-top: 5rem;
     overflow: hidden;
 }
@@ -33,24 +33,25 @@ body {
 
 .item {
     width: 400px;
-    height: 100px;
+    height: 100%;
     background-color: blue;
     border-radius: 6px;
     position: absolute;
     left: calc(200px * 8);
     animation-name: scrollleft; 
-    animation-duration: 10s;
+    animation-duration: 7s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: -1s;
     color: white;
-    font-size: 0.8rem;
+    font-size: 4rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding: 5px;
     display: flex;
     align-items: center;
     text-align: center;
+    opacity: 0.1;
 }
 
 .item1 {
